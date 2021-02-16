@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADuQ/N+3I2E6gR235E1GxdgAAAAACAAAAAAAQZgAAAAEAACAAAAD3D/94bKLPhZrkyADVRDbqmGh5MIQHN2Qdf0YvtolSaAAAAAAOgAAAAAIAACAAAABCLEYzb7PNP4Ys8iXqZzrjySeQybvBrn8cwNwzK49TwoAAAAAB0+aHBtU4qxxz+6sP8KTU2+CbUxrJIGAe3lKppk59g53rOLxYLwvhpDYHvYT/PjL/lbmMw50QtBzEiruFbszsJHrhyqc8cEv4Y9WXM3R+y2bzgQzzan+pd5GViwNsDn065IGYfCOLuAXWLv+iZcxXfhA3GP9ZLaPrfOcvKMXgPUAAAAB0KAO0wbSjqUO3o9wh9GpJAuF3yLESdtvnVqX1Pr6LbWPn4X49Wq3YrZhsf6gkq31aZl2umWcWlf8Q1DU3s+c8</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DevConnection">
+      <Value>Data Source=tcp:empleadodbserver.database.windows.net,1433%3bInitial Catalog=Empleado_db%3bUser Id=juanse%40empleadodbserver%3bPassword=Holacomoestas123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="EmpleadoController.Models.EmpleadoContext">
+      <Value>Data Source=tcp:empleadodbserver.database.windows.net,1433%3bInitial Catalog=Empleado_db%3bUser Id=juanse%40empleadodbserver%3bPassword=Holacomoestas123</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
